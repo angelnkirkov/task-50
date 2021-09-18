@@ -10,9 +10,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    <div class="main">
-      <div class="emoji mb-6">💣🤯💥</div>
-      <button class="button">Boom?</button>
-    </div>
+    <form>
+      <label for="prname">Project name:</label><br />
+      <input
+        type="text"
+        id="prname"
+        name="prname"
+        minlength="20"
+        required
+      /><br />
+      <label for="description">Description:</label><br />
+      <input
+        type="text"
+        id="description"
+        name="description"
+        maxlength="300"
+        required
+      /><br />
+      <label for="nameslug">Name-slug:</label><br />
+      <input
+        type="text"
+        id="nameslug"
+        name="nameslug"
+        pattern="[a-zA-Z-]*"
+        required
+      /><br />
+      <label for="contributors">Number of contributors:</label><br />
+      <input
+        type="number"
+        id="contributors"
+        name="contributors"
+        min="1"
+        max="100"
+        required
+      /><br />
+      <label for="branches">Number of branches:</label><br />
+      <input
+        type="number"
+        id="branches"
+        name="branches"
+        min="1"
+        max="100"
+        required
+      /><br />
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
   </body>
 </html>
