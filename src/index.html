@@ -11,14 +11,8 @@
   </head>
   <body>
     <form>
-      <label for="prname">Project name:</label><br />
-      <input
-        type="text"
-        id="prname"
-        name="prname"
-        minlength="20"
-        required
-      /><br />
+      <label for="name">Project name:</label><br />
+      <input type="text" id="name" name="name" minlength="20" required /><br />
       <label for="description">Description:</label><br />
       <input
         type="text"
@@ -27,28 +21,28 @@
         maxlength="300"
         required
       /><br />
-      <label for="nameslug">Name-slug:</label><br />
+      <label for="name_slug">Name-slug:</label><br />
       <input
         type="text"
-        id="nameslug"
-        name="nameslug"
+        id="name_slug"
+        name="name_slug"
         pattern="[a-zA-Z-]*"
         required
       /><br />
-      <label for="contributors">Number of contributors:</label><br />
+      <label for="contributers">Number of contributors:</label><br />
       <input
         type="number"
-        id="contributors"
-        name="contributors"
+        id="contributers"
+        name="contributers"
         min="1"
         max="100"
         required
       /><br />
-      <label for="branches">Number of branches:</label><br />
+      <label for="max_branches">Number of branches:</label><br />
       <input
         type="number"
-        id="branches"
-        name="branches"
+        id="max_branches"
+        name="max_branches"
         min="1"
         max="100"
         required
